@@ -174,7 +174,9 @@ function key_check() {
     }
   });
 
-  if (wrongs.length > 0) {
+  if (wrongs.length === 0 && rights.length === 0) {
+    alert("Anda belum mengisi jawaban");
+  } else if (wrongs.length > 0) {
     alert("Jawaban Ada Yang Salah");
   } else if (wrongs.length === 0 && belumDijawab.length > 0) {
     alert("Saat ini jawaban anda benar, tetapi masih ada yang belum dijawab");
